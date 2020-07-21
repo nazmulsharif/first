@@ -855,16 +855,10 @@ hr{
 	background-attachment: fixed;
 	color: #fff;
 }
-.blur{
-	width: 100%;
-	height: 100%;
-	top: 0;
-	left: 0;
-	position: absolute;
-	background-color: rgba(0,0,0,.1);
-}
+
 .box2 h4 {
 	color: #fff;
+	font-size: 25px;
 }
 .box2 a{
 	color: #fff;
@@ -946,5 +940,13 @@ hr{
 	}
 	.caption-item{
 		position: relative
+	}
+}
+@media screen and (max-width: 576px){
+	.box2 h4 {
+		font-size: 15px;
+	}
+	.call-back p{
+	font-size: 15px
 	}
 }
