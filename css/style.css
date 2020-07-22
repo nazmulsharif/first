@@ -8,10 +8,14 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	margin:0;
 	padding: 0;
 }
+.clearfix{
+	clear: both;
+}
 html, body{
 	font-family:  sans-serif;
 	font-size:100%;
 	background:#fff;
+	height: 100%;
 }
 body a{
     transition:0.5s all;
@@ -58,6 +62,7 @@ label{
 .banner{
 	position: relative;
 }
+
 .logo{
 	float: left;
 	width: 30%;
@@ -67,11 +72,7 @@ label{
 	width: 100%;
 	text-align: center;
 }
-.banner-top {
-	width: 70%;
-	float: left;
-	margin-top: 8px;
-}
+
 
 span.menu {
 	display: none;
@@ -104,57 +105,12 @@ span.menu {
 /*-- //to-top --*/
 /*-- responsive-design starts-here --*/
 
-@media screen and (max-width: 1366px) {
-	.about-quote h5 {
-		font-size: 2.5em;
-	}
-	.banner {
-		min-height: 750px;
-	}
-	.inner-banner {
-		min-height: 260px;
-	}
-	.about {
-		padding: 3em 0 5em;
-	}
-	#breadcrumb_wrapper {
-		padding: 53px 0;
-	}
-	.banner-info {
-		padding: 1em 0 1em 2em;
-	}
-	.search-bar {
-		margin: 5px auto 0;
-	}
-}
+
 @media screen and (max-width: 1280px) {
-	
-	.banner {
-		min-height: 650px;
-	}
-	.inner-banner {
-		min-height: 240px;
-	}
-	.services h3 {
-		font-size: 2.8em;
-		margin-bottom: 1.2em;
-	}
-	.dt-support {
-		width: 50%;
-	}
-	.plans {
-		padding: 4em 0 2em 0;
-	}
-	.services {
-		padding: 4em 0px 0em;
-		min-height: 425px;
-	}
 	.logo {
 		width: 24%;
 	}
-	.banner-top {
-		width: 54%;
-	}
+	
 	div#breadcrumb_wrapper h3 {
 		font-size: 1.8em;
 		margin-bottom: 8px;
@@ -233,15 +189,7 @@ span.menu {
 	.logo img {
 		width:100%;
 	}
-	.banner-top {
-		width: 56%;
-	}
-	.banner {
-		min-height: 524px;
-	}
-	.inner-banner {
-		min-height: 200px;
-	}
+	
 	.banner h1 {
 		font-size: 2.5em;
 	}
@@ -523,9 +471,6 @@ span.menu {
 	.header {
 		padding: 1em 0 0.6em 0;
 	}
-	.banner {
-		min-height: 325px;
-	}
 	.banner h1 {
 		font-size: 1.6em;
 	}
@@ -600,9 +545,7 @@ span.menu {
 		margin-bottom: 5px;
 		margin-top:5px;
 	}	
-	.inner-banner {
-		min-height: 190px;
-	}
+	
 	div#breadcrumb_wrapper h3 {
 		font-size: 1.65em;
 		margin-bottom: 3px;
@@ -735,7 +678,7 @@ span.menu {
 .carousel-inner{
 	position: relative;
 	width: 100%;
-	max-height:660px;
+	height: 100%;
 }
 .carousel-caption{
 	position: absolute;
@@ -905,11 +848,9 @@ hr{
 	color: #B9B9B9;
 }
 @media screen and (max-width: 768px){
-	.banner{
-		max-height: 750px;
-	}
+	
 	.carousel-inner{
-		max-height:700px;
+		min-height: 100%;
 	}
 	.carousel-caption{
 		position: absolute;
@@ -950,3 +891,7 @@ hr{
 	font-size: 15px
 	}
 }
+
+/*about page------*/
+
+ 
