@@ -1,9 +1,4 @@
-/*
-Author: W3layout
-Author URL: http://w3layouts.com
-License: Creative Commons Attribution 3.0 Unported
-License URL: http://creativecommons.org/licenses/by/3.0/
-*/
+
 html, body{
 	font-family: 'Ubuntu', sans-serif;
 	font-size:100%;
@@ -154,15 +149,7 @@ nav a:focus, ul.navig a:hover, ul.navig a:focus {
 
 /*-- Header Part Ends Here --*/
 /*--banner--*/
-.banner{
-	background:url(../images/banner3.jpg) no-repeat 0px 0px;
-	background-size:cover;
-	-webkit-background-size:cover;
-	-o-background-size:cover;
-	-moz-background-size:cover;
-	-ms-background-size:cover;
-	min-height:740px;
-}
+
 .banner h1 {
   color: #1BBC9B;
       font-size: 3.2em;
@@ -319,7 +306,8 @@ display: inline-block;
 }
 .pricing_top { 
   padding: 35px 0;
-  background-color: #000; }
+  background-color: #000; 
+}
 .pricing_top h6 {
 	margin: 0;
 	color: #1BBC9B;
@@ -977,7 +965,6 @@ i.icon-shield {
 	padding:80px 0;
 	text-align: center;
 	color: #fff;
-	background-color: rgba(0, 0, 0, 0.4);
 }
 .hd-content {
 	  padding: 6em 0 2em 0;
@@ -1025,6 +1012,39 @@ div#breadcrumb_wrapper h6 {
 .inner-banner{
 	min-height:270px;
 	background: url(../images/banner3.jpg) no-repeat 0px 0px;
+}
+.accounting-banner{
+	min-height:270px!important;
+	background: url(../images/slider/financial.jpg) no-repeat 0px 0px;
+}
+.incometax-banner{
+	min-height:270px!important;
+	background: url(../images/slider/income-tax.jpg) no-repeat 0px 0px;
+
+}
+.advisor-banner{
+	min-height:270px!important;
+	background: url(../images/slider/advisor-tax.jpg) no-repeat 0px 0px;
+}
+.corporatetax-banner{
+	min-height:270px!important;
+	background: url(../images/slider/corporate1.jpg) no-repeat 0px 0px;	
+}
+.vat-banner{
+	min-height:270px!important;
+	background: url(../images/slider/vat.jpg) no-repeat 0px 0px;	
+}
+.bida-banner{
+	min-height:270px!important;
+	background: url(../images/slider/bida.jpg) no-repeat 0px 0px;	
+}
+.bpo-banner{
+	min-height:270px!important;
+	background: url(../images/slider/bpo.jpg) no-repeat 0px 0px;	
+}
+.consultancy-banner{
+	min-height:270px!important;
+	background: url(../images/slider/consultancy.jpg) no-repeat 0px 0px;	
 }
 /*-- plans & pricing --*/
 .PlanPricing .price{
@@ -3747,3 +3767,53 @@ p{
 	color: #B9B9B9;
 }
  
+.row.vdivide [class*='col-']:not(:last-child):after {
+      background: #e0e0e0;
+      width: 1px;
+      content: "";
+      display:block;
+      position: absolute;
+      top:0;
+      bottom: 0;
+      right: 0;
+      min-height: 70px;
+    
+}
+@media screen and (max-width: 767px){
+	.box2 h4 {
+		font-size: 15px;
+	}
+	.call-back p{
+	font-size: 15px
+	}
+	.row.vdivide [class*='col-']:not(:last-child):after {
+      background: transparent;
+      width: 0px;
+      content: "";
+      display:block;
+      position: absolute;
+      top:0;
+      bottom: 0;
+      right: 0;
+      min-height: 70px;
+    
+	}
+}
+h1,h2,h3,h4,h5,h6{
+	color:#7BB82A;
+}
+
+.banner{
+	position: relative;
+	z-index: 99999;
+}
+.overlay1{
+	width: 100%;
+	background: #000;
+	opacity:.5;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -9999;
+}

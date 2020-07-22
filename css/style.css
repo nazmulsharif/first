@@ -747,10 +747,10 @@ hr{
 	box-shadow: 0px 0px 50px #7BB82A;
 }
 .best-services .img{
-	width: 80px;
-	height: 80px;
+	width: 100px;
+	height: 100px;
 	border-radius: 50%;
-	background-color: #ddd;
+	background-color: #fff;
 	margin: 10px auto;
 	border: 1px solid #7BB82A;
 }
@@ -890,6 +890,18 @@ hr{
 	.call-back p{
 	font-size: 15px
 	}
+	.row.vdivide [class*='col-']:not(:last-child):after {
+      background: transparent;
+      width: 0px;
+      content: "";
+      display:block;
+      position: absolute;
+      top:0;
+      bottom: 0;
+      right: 0;
+      min-height: 70px;
+    
+	}
 }
 
 /*about page------*/
@@ -901,3 +913,36 @@ hr{
  	height: 100vh;
  	width: 100%;
  }
+.row.vdivide [class*='col-']:not(:last-child):after {
+      background: #e0e0e0;
+      width: 1px;
+      content: "";
+      display:block;
+      position: absolute;
+      top:0;
+      bottom: 0;
+      right: 0;
+      min-height: 70px;
+    
+}
+@media screen and (max-width: 767px){
+	.box2 h4 {
+		font-size: 15px;
+	}
+	.call-back p{
+	font-size: 15px
+	}
+	.row.vdivide [class*='col-']:not(:last-child):after {
+      background: transparent;
+      width: 0px;
+      content: "";
+      display:block;
+      position: absolute;
+      top:0;
+      bottom: 0;
+      right: 0;
+      min-height: 70px;
+    
+	}
+}
+
