@@ -854,7 +854,7 @@ hr{
 	}
 	.carousel-caption{
 		position: absolute;
-		top:30%;
+		top:50%;
 		left: 15%;
 		bottom: 0;
 		text-align:left;
@@ -893,5 +893,11 @@ hr{
 }
 
 /*about page------*/
-
- 
+#mycarousel{
+	height: 100vh;
+	width: 100%;
+ }
+ #mycarousel img{
+ 	height: 100vh;
+ 	width: 100%;
+ }
