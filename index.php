@@ -19,13 +19,23 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <link href='http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700' rel='stylesheet' type='text/css'>
 <!-- webfonts -->
 <!-- dropdown -->
-<link rel="icon" href="images/logo1.png" type="image/png">
+<link rel="icon" href="images/favicon.png" type="image/png">
 <link href="css/nav.css" rel="stylesheet" type="text/css" media="all"/>
 <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css" media="all"/>
 <link href="css/owl.carousel.min.css" rel="stylesheet" type="text/css" media="all"/>
 <link href="css/animate.css" rel="stylesheet" type="text/css" media="all"/>
+<link href="css/alertify.min.css" rel="stylesheet" type="text/css" media="all"/>
 <!-- start-smoth-scrolling -->
 <script src="js/jquery-1.11.1.min.js"></script>
+<style>
+.alertify-notifier .ajs-message.ajs-error{
+      color: #fff;
+}
+.alertify-notifier .ajs-message.ajs-success{
+      color: #fff;
+}
+</style>
+
 </head>
 <body>
 <!-- Header Starts Here -->
@@ -33,14 +43,14 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<div class="header">
 		<div class="container">
 			<div class="logo">
-				<a href="index.html"><img src="images/logo2.jpg" alt="" width="197" height="100"></a>
+				<a href="index.php"><img src="images/logo1.png" alt="" width="250" height="80"></a>
 			</div>
 			<span class="menu"> <i class="fa fa-bars" aria-hidden="true"></i></span>
 				
 			<div class="banner-top mt-4">
 				<ul class="nav banner-nav">                                     
-					<li><a class="active" href="index.html">Home</a></li>
-					<li class="dropdown1"><a href="">Insight SAMC</a></li> 
+					<li><a class="active" href="index.php">Home</a></li>
+					<li class="dropdown1"><a href="samc.html">Insight SAMC</a></li> 
 					<li class="dropdown1"><a class="down-scroll">Our Services</a>
 						<ul class="dropdown2">
 							<li><a href="accounting.html">Accounting and Financial Reporting</a></li>
@@ -55,7 +65,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					</li>     
 					<li class="dropdown1"><a href="about.html">About Us</a>
 					</li>  				
-					<li class="dropdown1"><a href="">Contact Us</a></li>  
+					<li class="dropdown1"><a href="contact.html">Contact Us</a></li>  
 				</ul>
 				<script>
 					$("span.menu").click(function(){
@@ -158,7 +168,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		<div class="box owl-carousel owl-theme">
 			<div class="s1">
 				<div class="img">
-					<img src="images/logo1.png" alt="">
+					<img src="images/favicon.png" alt="">
 				</div>
 				<hr>
 				<div class="stext mt-2">
@@ -169,7 +179,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			</div>
 			<div class="s1">
 				<div class="img">
-					<img src="images/logo1.png" alt="">
+					<img src="images/favicon.png" alt="">
 				</div>
 				<hr>
 				<div class="stext mt-2">
@@ -180,7 +190,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			</div>
 			<div class="s1">
 				<div class="img">
-					<img src="images/logo1.png" alt="">
+					<img src="images/favicon.png" alt="">
 				</div>
 				<hr>
 				<div class="stext mt-2">
@@ -191,7 +201,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			</div>
 			<div class="s1">
 				<div class="img">
-					<img src="images/logo1.png" alt="">
+					<img src="images/favicon.png" alt="">
 				</div>
 				<hr>
 				<div class="stext mt-2">
@@ -202,7 +212,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			</div>
 			<div class="s1">
 				<div class="img">
-					<img src="images/logo1.png" alt="">
+					<img src="images/favicon.png" alt="">
 				</div>
 				<hr>
 				<div class="stext mt-2">
@@ -213,7 +223,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			</div>
 			<div class="s1">
 				<div class="img">
-					<img src="images/logo1.png" alt="">
+					<img src="images/favicon.png" alt="">
 				</div>
 				<hr>
 				<div class="stext mt-2">
@@ -224,7 +234,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			</div>
 			<div class="s1">
 				<div class="img">
-					<img src="images/logo1.png" alt="">
+					<img src="images/favicon.png" alt="">
 				</div>
 				<hr>
 				<div class="stext mt-2">
@@ -235,7 +245,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			</div>
 			<div class="s1">
 				<div class="img">
-					<img src="images/logo1.png" alt="">
+					<img src="images/favicon.png" alt="">
 				</div>
 				<hr>
 				<div class="stext mt-2">
@@ -272,29 +282,30 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		<div class="row">
 			<div class="col-md-6">
 				<h2 class="mb-3">Personal Information</h2>
-				<form action="">
+				<h3></h3>
+				<form action="" method="post" id="logform">
 					<div class="form-group">
 						<label for="" class="col-form-label-sm">Your Name(required)</label>
-						<input type="text" class="form-control" name = "name">
+						<input type="text" class="form-control" name = "name" id="name">
 					</div>
 					<div class="form-group">
 						<label for="" class="col-form-label-sm">Your Email(required)</label>
-						<input type="email" class="form-control" name = "email">
+						<input type="email" class="form-control" name = "email" id="email">
 					</div>
 					<div class="form-group">
 						<label for="" class="col-form-label-sm">Subject</label>
-						<input type="text" class="form-control" name = "email">
+						<input type="text" class="form-control" name = "subject" id="subject">
 					</div>
 					<div class="form-group">
 						<label for="" class="col-form-label-sm">Your Message</label>
-						<textarea name="msg" id=""  class="form-control" rows="6"></textarea>
+						<textarea name="msg" id=""  class="form-control" rows="6" id="msg"></textarea>
 					</div>
-					<input type="submit" class="btn btn-success">
+					<input type="submit" class="btn btn-success sub" name="submit">
 				</form>
 			</div>
 			<div class="col-md-6">
 				<h2 class="mb-3">Company Information</h2>
-				<form action="">
+				<form action="" method="post">
 					<div class="form-group">
 						<label for="" class="col-form-label-sm">Your Name(required)</label>
 						<input type="text" class="form-control" name = "name">
@@ -305,13 +316,13 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					</div>
 					<div class="form-group">
 						<label for="" class="col-form-label-sm">Subject</label>
-						<input type="text" class="form-control" name = "email">
+						<input type="text" class="form-control" name = "subject">
 					</div>
 					<div class="form-group">
 						<label for="" class="col-form-label-sm">Your Message</label>
 						<textarea name="msg" id="" class="form-control" rows="6"></textarea>
 					</div>
-					<input type="submit" class="btn btn-success">
+					<input type="submit" class="btn btn-success" name="sub">
 				</form>
 			</div>
 		</div>
@@ -327,15 +338,14 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<div class="container">
 		<div class="row vdivide">
 			<div class="col-md-3">
-				<a href="index.html"><img src="images/logo1.png" alt=""width="197" height="100"></a>
-				<a href=""><h6>SA Management Consultancy Firm</h6></a>
+				<a href="index.php"><img src="images/logo1.png" alt=""width="250" height="80"></a>
 				<p class="mt-2 text-light">A Reliable Valley of Income Tax, VAT, Business Support System, Accounts and Corporate Affairs.</p>
 			</div>
 			<div class="col-md-6">
 				<div class="row">
 					<div class="col-md-6">
 						<ul class="list-unstyled">
-							<li class="list-item"><a href="">Insight SAMC</a></li> 
+							<li class="list-item"><a href="samc.html">Insight SAMC</a></li> 
 							<li class="list-item"><a href="accounting.html">Accounting and Financial Reporting</a></li>
 							<li class="list-item"><a href="income-tax.html">Income Tax Compliance</a></li>
 							<li class="list-item"><a href="corporate-tax.html">Corporate Income Tax</a></li>
@@ -351,7 +361,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							<br>
 							<li class="list-item"><a href="about.html">About Us</a>
 							</li>  				
-							<li class="list-item"><a href="">Contact Us</a></li>  
+							<li class="list-item"><a href="contact.html">Contact Us</a></li>  
 						</ul>
 					</div>
 				</div>
@@ -375,6 +385,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<script src="js/jquery.parallax-1.1.3.js"></script>
 	<script src="js/jquery.smooth-scroll.js"></script>
 	<script src="js/wow.js"></script>
+	<script src="js/alertify.min.js"></script>
+	<script src="js/main.js"></script>
 	<script type="text/javascript">
 			$(document).ready(function() {
 				new WOW().init();
@@ -405,9 +417,55 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					    }
 
 				});
+			
+
 		});
 
 	</script>
 	<!-- //here ends scrolling icon -->
 </body>
 </html>
+
+<?php
+	if(isset($_POST['submit'])){
+		$name = $_POST['name'];
+		$email = $_POST['email'];
+		$subject = $_POST['subject'];
+		$msg = $_POST['msg'];
+		if(empty($name)||empty($email)||empty($msg)||empty($subject)){
+			echo "<script type='text/javascript'>
+			alertify.set('notifier','position', 'top-right');
+			alertify.error('ERROR! Check required input field');
+			</script>";
+		}
+		else{
+			mail("nazmulict94@gmail.com",$subject,$msg,"From:$name < $email>");
+			echo "<script type='text/javascript'>
+			alertify.set('notifier','position', 'top-right');
+			alertify.success('Your message was sent successfully');
+			</script>";
+		}
+		
+	}
+	if(isset($_POST['sub'])){
+		$name = $_POST['name'];
+		$email = $_POST['email'];
+		$subject = $_POST['subject'];
+		$msg = $_POST['msg'];
+		if(empty($name)||empty($email)||empty($msg)||empty($subject)){
+			$error = "all fields are required";
+			echo "<script type='text/javascript'>
+			alertify.set('notifier','position', 'top-right');
+			alertify.error('ERROR! Check required input field');
+			</script>";
+		}
+		else{
+			mail("nazmulict94@gmail.com",$subject,$msg,"From:$name < $email>");
+			echo "<script type='text/javascript'>
+			alertify.set('notifier','position', 'top-right');
+			alertify.success('Your message was sent successfully');
+			</script>";
+		}
+		
+	}
+?>

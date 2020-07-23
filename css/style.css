@@ -747,12 +747,12 @@ hr{
 	box-shadow: 0px 0px 50px #7BB82A;
 }
 .best-services .img{
-	width: 100px;
-	height: 100px;
+	width: 130px;
+	height: 130px;
 	border-radius: 50%;
-	background-color: #fff;
 	margin: 10px auto;
 	border: 1px solid #7BB82A;
+	background: #fff;
 }
 .best-services h6{
 	color:#7BB82A;
@@ -830,6 +830,7 @@ hr{
 	background: red;
 	display: block;
 }
+
 .footer a{
 	color: #7BB82A;
 }
